@@ -6,7 +6,8 @@
             <div class="h-full px-3 pb-4 overflow-y-auto bg-white dark:bg-gray-800">
                 <ul class="space-y-2 font-medium">
                     <li>
-                        <a href="#" class="active-menu flex items-center px-2 py-[13px]  rounded-lg">
+                        <router-link class="active-menu flex items-center px-2 py-[13px]  rounded-lg"
+                            :to="{ name: 'dahsboard' }">
                             <svg aria-hidden="true"
                                 class="w-6 h-6 active-menu transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
                                 fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -14,7 +15,8 @@
                                 <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path>
                             </svg>
                             <span class="ml-3">Dashboard</span>
-                        </a>
+                        </router-link>
+
                     </li>
                     <li>
                         <button type="button"
@@ -38,8 +40,9 @@
                         <ul id="dropdown-example" class="hidden py-2 space-y-2">
 
                             <li>
-                                <a href="#"
-                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Alert</a>
+                                <router-link
+                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                                    :to="{ name: 'alert' }">Alert</router-link>
                             </li>
                         </ul>
                     </li>

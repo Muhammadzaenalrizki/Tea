@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Dashboard from "../views/admin/Dashboard.vue";
+import Alert from "../views/admin/Alert.vue";
 
 const router = createRouter({
   history: createWebHistory("/"), //test_v
@@ -8,8 +9,13 @@ const router = createRouter({
   routes: [
     {
       path: "/",
-      name: "home",
+      name: "dahsboard",
       component: Dashboard,
+    },
+    {
+      path: "/alert",
+      name: "alert",
+      component: Alert,
     },
   ],
 });

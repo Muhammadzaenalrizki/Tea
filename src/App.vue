@@ -1,9 +1,18 @@
 <script setup>
+import Layout from './views/admin/Layout.vue';
 import { RouterLink, RouterView } from 'vue-router'
+import { useRoute } from 'vue-router';
+const route = useRoute();
 </script>
 
 <template>
-  <RouterView />
+  <div v-if="route.name != 'login'">
+    <Layout>
+
+      <RouterView />
+
+    </Layout>
+  </div>
 </template>
 
 <style scoped>
