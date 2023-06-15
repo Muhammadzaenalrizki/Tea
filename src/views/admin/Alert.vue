@@ -15,7 +15,7 @@
                     </div>
                     <div>
                         <h3 class="text-[20px] mb-3">Icon alert</h3>
-                        <IconAlert>
+                        <IconAlert bg="bg-red-50" color="text-red-800">
                             <template v-slot:description>
                                 A simple info alert with an .
                                 Give it a click if
