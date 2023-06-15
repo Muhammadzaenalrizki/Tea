@@ -13,4 +13,7 @@ font-family: 'Roboto', sans-serif;
     .active-menu {
       @apply bg-green-400 rounded-lg text-white;
     }
+    .tea-card{
+      @apply p-6 bg-white border  border-gray-200 rounded-lg  dark:bg-gray-800 dark:border-gray-700 shadow-my;
+    }
   }
