@@ -43,4 +43,12 @@
 <script setup>
 import DefaultAlertVue from './../../components/alert/DefaultAlert.vue';
 import IconAlert from './../../components/alert/IconAlert.vue';
+import { onMounted } from 'vue'
+import { initFlowbite } from 'flowbite'
+
+// initialize components based on data attribute selectors
+onMounted(() => {
+    initFlowbite();
+})
+
 </script>

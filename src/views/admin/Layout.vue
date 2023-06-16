@@ -7,12 +7,10 @@
         <slot></slot>
       </div>
     </div>
-
   </div>
 </template>
 
 <script setup>
-
 import Navbar from './Navigation.vue';
 import Sidebar from './Sidebar.vue';
 </script>
