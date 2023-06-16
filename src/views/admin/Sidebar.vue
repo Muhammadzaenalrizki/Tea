@@ -42,7 +42,12 @@
                             <li>
                                 <router-link
                                     class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
-                                    :to="{ name: 'alert' }">Alert</router-link>
+                                    :to="{ name: 'alert' }">Alerts</router-link>
+                            </li>
+                            <li>
+                                <router-link
+                                    class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                                    :to="{ name: 'button' }">Buttons</router-link>
                             </li>
                         </ul>
                     </li>

@@ -10,6 +10,9 @@ font-family: 'Roboto', sans-serif;
 }
 
 @layer components {
+  .title-component{
+    @apply text-[20px] mb-3;
+  }
     .active-menu {
       @apply bg-green-400 rounded-lg text-white;
     }

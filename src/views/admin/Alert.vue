@@ -5,7 +5,7 @@
 
                 <div class="tea-card">
                     <div>
-                        <h3 class="text-[20px] mb-3">Default alert</h3>
+                        <h3 class="title-component ">Default alert</h3>
                         <DefaultAlertVue class="text-blue-800 bg-blue-50" />
                         <DefaultAlertVue class="text-red-800 bg-red-50" />
                         <DefaultAlertVue class="text-green-800 bg-green-50" />
@@ -14,7 +14,7 @@
 
                     </div>
                     <div>
-                        <h3 class="text-[20px] mb-3">Icon alert</h3>
+                        <h3 class="title-component">Icon alert</h3>
                         <IconAlert bg="bg-red-50" color="text-red-800">
                             <template v-slot:description>
                                 A simple info alert with an .
