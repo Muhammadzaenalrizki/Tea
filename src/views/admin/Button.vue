@@ -1,19 +1,19 @@
 <template>
     <div>
         <div class="grid grid-cols-1 gap-1 mb-4">
-            <div class=" rounded bg-gray-50 dark:bg-gray-800">
-
-                <div class="tea-card">
-                    <div>
-                        <h3 class="title-component">Default buttons</h3>
-                        <DefaultButton bg="bg-blue-700" color="text-white " hover="hover:bg-blue-800">
-                        </DefaultButton>
-                    </div>
+            <Card>
+                <!-- default buttons -->
+                <h3 class="title-component">Default buttons</h3>
+                <div class="flex">
+                    <button type="button" class="default-button bg-blue-500 text-white hover:bg-blue-700">Default</button>
+                    <button type="button" class="default-button bg-red-500 text-white hover:bg-red-700">Default</button>
+                    <button type="button" class="default-button bg-green-500 text-white hover:bg-green-700">Default</button>
+                    <button type="button"
+                        class="default-button bg-yellow-300 text-white hover:bg-yellow-500">Default</button>
+                    <button type="button" class="default-button bg-gray-500 text-white hover:bg-gray-700">Default</button>
                 </div>
-            </div>
+            </Card>
+
         </div>
     </div>
 </template>
-<script setup>
-import DefaultButton from '../../components/buttons/DefaultButton.vue';
-</script>
