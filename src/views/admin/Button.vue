@@ -4,7 +4,7 @@
             <Card>
                 <!-- default buttons -->
                 <h3 class="title-component">Default buttons</h3>
-                <div class="flex">
+                <div class="flex flex-wrap">
                     <button type="button" class="default-button bg-blue-500 text-white hover:bg-blue-700">Default</button>
                     <button type="button" class="default-button bg-red-500 text-white hover:bg-red-700">Default</button>
                     <button type="button" class="default-button bg-green-500 text-white hover:bg-green-700">Default</button>

@@ -23,6 +23,6 @@ font-family: 'Roboto', sans-serif;
       @apply bg-white rounded-lg text-[#7e8cda];
     }
     .tea-card{
-      @apply p-6 bg-white border  border-gray-200 rounded-lg  dark:bg-gray-800 dark:border-gray-700 shadow-my;
+      @apply p-6 bg-white  rounded-lg  dark:bg-gray-800 dark:border-gray-700 shadow-my;
     }
   }

@@ -3,8 +3,8 @@
         <div class="grid grid-cols-1 gap-1 mb-4">
             <Card>
 
-                <div>
-                    <h3 class="title-component ">Default alert</h3>
+                <h3 class="title-component ">Default alert</h3>
+                <div >
                     <DefaultAlertVue class="text-blue-800 bg-blue-50"> <span class="font-medium">Info alert!</span> Change a
                         few things up and try submitting again.</DefaultAlertVue>
                     <DefaultAlertVue class="text-red-800 bg-red-50"> <span class="font-medium">Info alert!</span> Change a
