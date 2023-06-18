@@ -24,6 +24,7 @@ const router = createRouter({
       component: Button,
     },
   ],
+  linkActiveClass: "active-menu",
 });
 
 export default router;
