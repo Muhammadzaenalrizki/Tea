@@ -1,7 +1,7 @@
 <template>
     <div>
         <li>
-            <router-link class=" flex items-center px-2 py-[13px]  rounded-lg" :to="to">
+            <router-link @click="CloseMenu" class=" flex items-center px-2 py-[13px]  rounded-lg" :to="to">
                 <slot :class="getClassActive(title)"></slot>
                 <span class="ml-3 text-menu">{{ title }}</span>
             </router-link>
@@ -23,7 +23,16 @@ export default {
     methods: {
         getClassActive(path) {
             return this.$route.path === path ? this.$router.options.linkActiveClass : '';
+        },
+        CloseMenu() {
+            const widthScreen = window.screen.availWidth;
+            console.log(widthScreen);
+            if (widthScreen <= 642) {
+                const hamburger = document.querySelector('#hamburger');
+                hamburger.click()
+            }
         }
+
     },
 }
 </script>
