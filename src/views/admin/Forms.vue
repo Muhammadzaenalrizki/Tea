@@ -2,55 +2,47 @@
     <div>
         <div class="grid grid-cols-1 gap-1 mb-4">
             <Card>
-                <h2 class="mb-4 text-xl font-bold text-gray-900 dark:text-white">Add a new product</h2>
+                <h2 class="mb-4 text-xl font-bold text-gray-900 ">Add Form</h2>
                 <form action="#">
                     <div class="grid gap-4 sm:grid-cols-2 sm:gap-6">
                         <div class="sm:col-span-2">
-                            <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Product
+                            <label for="name" class="label-input">Product
                                 Name</label>
                             <input type="text" name="name" id="name"
-                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                                placeholder="Type product name" required="">
+                                class="input  focus:ring-primary-600 focus:border-primary-600"
+                                placeholder="Type product name">
                         </div>
                         <div class="w-full">
-                            <label for="brand"
-                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Brand</label>
+                            <label for="brand" class="label-input">Brand</label>
                             <input type="text" name="brand" id="brand"
-                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                                placeholder="Product brand" required="">
+                                class="input  focus:ring-primary-600 focus:border-primary-600" placeholder="Product brand">
                         </div>
                         <div class="w-full">
-                            <label for="price"
-                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Price</label>
+                            <label for="price" class="label-input">Price</label>
                             <input type="number" name="price" id="price"
-                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                                placeholder="$2999" required="">
+                                class="input  focus:ring-primary-600 focus:border-primary-600" placeholder="$2999">
                         </div>
                         <div>
-                            <label for="category"
-                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Category</label>
+                            <label for="category" class="label-input">Category</label>
                             <select id="category"
-                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
-                                <option selected="">Select category</option>
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400  dark:focus:ring-primary-500 dark:focus:border-primary-500">
+                                <option value="">Select category</option>
                                 <option value="TV">TV/Monitors</option>
-                                <option value="PC">PC</option>
+                                <option value="PC" selected>PC</option>
                                 <option value="GA">Gaming/Console</option>
                                 <option value="PH">Phones</option>
                             </select>
                         </div>
                         <div>
-                            <label for="item-weight"
-                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Item Weight
+                            <label for="item-weight" class="label-input">Item Weight
                                 (kg)</label>
                             <input type="number" name="item-weight" id="item-weight"
-                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                                placeholder="12" required="">
+                                class="input  focus:ring-primary-600 focus:border-primary-600" placeholder="12">
                         </div>
                         <div class="sm:col-span-2">
-                            <label for="description"
-                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Description</label>
+                            <label for="description" class="label-input">Description</label>
                             <textarea id="description" rows="8"
-                                class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                                class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400  dark:focus:ring-primary-500 dark:focus:border-primary-500"
                                 placeholder="Your description here"></textarea>
                         </div>
                     </div>

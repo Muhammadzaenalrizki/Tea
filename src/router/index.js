@@ -3,6 +3,7 @@ import Dashboard from "../views/admin/Dashboard.vue";
 import Alert from "../views/admin/Alert.vue";
 import Button from "../views/admin/Button.vue";
 import Forms from "../views/admin/Forms.vue";
+import BasicTable from "../views/admin/BasicTable.vue";
 
 const router = createRouter({
   history: createWebHistory("/"), //test_v
@@ -28,6 +29,11 @@ const router = createRouter({
       path: "/forms",
       name: "forms",
       component: Forms,
+    },
+    {
+      path: "/BasicTable",
+      name: "BasicTable",
+      component: BasicTable,
     },
   ],
   linkActiveClass: "active-menu",

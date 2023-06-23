@@ -17,12 +17,21 @@ font-family: 'Roboto', sans-serif;
     @apply text-[20px] mb-3;
   }
   .default-button{
-    @apply focus:ring-4 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2;
+    @apply  font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2;
   }
     .active-menu {
       @apply bg-white rounded-lg text-[#7e8cda];
     }
     .tea-card{
       @apply p-6 bg-white  rounded-lg  dark:bg-gray-800 dark:border-gray-700 shadow-my;
+    }
+    .input{
+      @apply bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5 ;
+    }
+    .label-input{
+      @apply block mb-2 text-sm font-medium text-gray-900 ;
+    }
+    .col-table{
+      @apply px-6 py-3;
     }
   }
