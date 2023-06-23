@@ -89,5 +89,5 @@
     </div>
 </template>
 <script setup>
-import { Table, Thead } from './../../components/Tables/BasicTable/index.vue';
+import { Table, Thead } from './../../components/Tables/BasicTable/Index.vue';
 </script>
