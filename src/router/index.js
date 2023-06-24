@@ -1,9 +1,4 @@
 import { createRouter, createWebHistory } from "vue-router";
-import Dashboard from "../views/admin/Dashboard.vue";
-import Alert from "../views/admin/Alert.vue";
-import Button from "../views/admin/Button.vue";
-import Forms from "../views/admin/Forms.vue";
-import BasicTable from "../views/admin/BasicTable.vue";
 
 const router = createRouter({
   history: createWebHistory("/"), //test_v
@@ -13,27 +8,27 @@ const router = createRouter({
     {
       path: "/",
       name: "dahsboard",
-      component: Dashboard,
+      component: () => import("../views/admin/Dashboard.vue"),
     },
     {
       path: "/alerts",
       name: "alert",
-      component: Alert,
+      component: () => import("../views/admin/Alert.vue"),
     },
     {
       path: "/buttons",
       name: "button",
-      component: Button,
+      component: () => import("../views/admin/Button.vue"),
     },
     {
       path: "/forms",
       name: "forms",
-      component: Forms,
+      component: () => import("../views/admin/Forms.vue"),
     },
     {
       path: "/BasicTable",
       name: "BasicTable",
-      component: BasicTable,
+      component: () => import("../views/admin/BasicTable.vue"),
     },
   ],
   linkActiveClass: "active-menu",
