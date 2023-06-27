@@ -79,6 +79,7 @@
                 </button>
                 <ul id="Basic-Table" class="hidden py-2 space-y-2">
                     <Items title="Basic Table" :to="{ name: 'BasicTable' }"></Items>
+                    <Items title="Data Table" :to="{ name: 'DataTable' }"></Items>
 
                 </ul>
             </li>

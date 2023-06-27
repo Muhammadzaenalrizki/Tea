@@ -1,7 +1,9 @@
 <script setup>
 import Layout from './views/admin/Layout.vue';
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterView } from 'vue-router'
 import { useRoute } from 'vue-router';
+import "flowbite";
+
 const route = useRoute();
 </script>
 

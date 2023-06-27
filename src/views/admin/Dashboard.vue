@@ -1,5 +1,6 @@
 <template>
     <div>
+        <TestButton></TestButton>
         <div class="grid grid-cols-3 gap-4 mb-4">
             <div class=" rounded bg-gray-50 dark:bg-gray-800">
 
@@ -56,7 +57,7 @@
                                 clip-rule="evenodd"></path>
                             <path d="M9 11H3v5a2 2 0 002 2h4v-7zM11 18h4a2 2 0 002-2v-5h-6v7z"></path>
                         </svg>
-                        <span class="ml-1 text-[#8A92A6]">Sales</span>
+                        <span class="ml-1 text-[#8A92A6]" v-color="{ color: 'red' }">Saless</span>
                     </div>
                     <a href="#">
                         <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">$15,00
@@ -106,8 +107,18 @@
     </div>
 </template>
 
-<script setup>
-import "flowbite";
-import Layout from './Layout.vue';
-
+<script >
+export default {
+    setup() {
+        /*...*/
+    },
+    directives: {
+        // enables v-focus in template
+        color: function (el, binding) {
+            el.style.color = binding.value.color
+            console.log(binding.value.color);
+            console.log(el);
+        }
+    }
+}
 </script>

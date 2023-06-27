@@ -30,6 +30,11 @@ const router = createRouter({
       name: "BasicTable",
       component: () => import("../views/admin/BasicTable.vue"),
     },
+    {
+      path: "/DataTable",
+      name: "DataTable",
+      component: () => import("../views/admin/DataTable.vue"),
+    },
   ],
   linkActiveClass: "active-menu",
 });
