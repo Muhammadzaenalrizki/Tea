@@ -4,7 +4,7 @@
             <Card>
 
                 <h3 class="title-component ">Default alert</h3>
-                <div >
+                <div>
                     <DefaultAlertVue class="text-blue-800 bg-blue-50"> <span class="font-medium">Info alert!</span> Change a
                         few things up and try submitting again.</DefaultAlertVue>
                     <DefaultAlertVue class="text-red-800 bg-red-50"> <span class="font-medium">Info alert!</span> Change a
@@ -51,5 +51,4 @@ import { initFlowbite } from 'flowbite'
 onMounted(() => {
     initFlowbite();
 })
-
 </script>

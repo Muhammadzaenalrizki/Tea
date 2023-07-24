@@ -90,4 +90,12 @@
 </template>
 <script setup>
 import { Table, Thead } from './../../components/Tables/BasicTable/Index.vue';
+import { onMounted } from 'vue'
+import { initFlowbite } from 'flowbite'   
+
+// initialize components based on data attribute selectors
+onMounted(() => {
+    console.log(document);
+    initFlowbite();
+})
 </script>

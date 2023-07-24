@@ -1,10 +1,13 @@
 <template>
-    <Card>
-        <div id="wrapper"></div>
-    </Card>
-    <Card>
-        <div id="wrapper2"></div>
-    </Card>
+    <div>
+
+        <Card>
+            <div id="wrapper"></div>
+        </Card>
+        <Card>
+            <div id="wrapper2"></div>
+        </Card>
+    </div>
 </template>
 <script>
 import { Grid } from "gridjs";

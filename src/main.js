@@ -6,6 +6,7 @@ import router from "./router";
 
 const app = createApp(App);
 app.component("Card", Card);
+
 app.use(router);
 
 app.mount("#app");
