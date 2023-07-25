@@ -10,9 +10,16 @@
     </div>
 </template>
 <script>
+
 import { Grid } from "gridjs";
 import "gridjs/dist/theme/mermaid.css";
+import { onMounted } from 'vue'
+import { initFlowbite } from 'flowbite'
 
+// initialize components based on data attribute selectors
+onMounted(() => {
+    initFlowbite();
+})
 export default {
     mounted() {
         new Grid({

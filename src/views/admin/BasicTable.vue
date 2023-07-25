@@ -95,7 +95,6 @@ import { initFlowbite } from 'flowbite'
 
 // initialize components based on data attribute selectors
 onMounted(() => {
-    console.log(document);
     initFlowbite();
 })
 </script>
